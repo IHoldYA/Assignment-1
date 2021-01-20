@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
     <title>Blog &ndash; Layout Examples &ndash; Pure</title>
-    <!-- <link rel="stylesheet" href="/css/pure/pure-min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-    <!-- <link rel="stylesheet" href="/css/pure/grids-responsive-min.css"> -->
     <link rel="stylesheet" href="styles.css">
    
 </head>
@@ -17,140 +15,293 @@
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
-            <h1 class="brand-title">CHUJ</h1>
-            <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+            <h1 class="brand-title">MODULAR WOOD PAVILLION</h1>
+            <h2 class="brand-tagline">by Aleksander Mastalski</h2>
 
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="pure-button" href="http://purecss.io">Pure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                        <a class="pure-button" href="http://www.iaacblog.com/programs/modular-wood-pavillion/">IAAC Blog</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <div class="content pure-u-1 pure-u-md-3-4">
+    <div class="content pure-u-1 pure-u-md-2-5">
         <div>
-            <!-- A wrapper for all the blog posts -->
+            
             <div class="posts">
-                <h1 class="content-subhead">Pinned Post</h1>
-
-                <!-- A single blog post -->
+                                <img alt="Main vis"      
+                        id="img_1"
+                        class="pure-img-responsive"
+                        src="http://www.iaacblog.com/wp-content/uploads/2020/12/1_title-730x451.png">
+                        <h1 id="caption_1" class="content-subhead">Visualisation of the pavillion</h1>
+                
                 <section class="post">
                     <header class="post-header">
-                        <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="/img/common/tilo-avatar.png">
 
-                        <h2 class="post-title">Introducing Pure</h2>
+                        <h2 class="post-title">Abstract</h2>
 
-                        <p class="post-meta">
-                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                        </p>
                     </header>
 
                     <div class="post-description">
                         <p>
-                            Yesterday at CSSConf, we launched Pure – a new CSS library. Phew! Here are the <a href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the presentation</a>. Although it looks pretty minimalist, we’ve been working on Pure for several months. After many iterations, we have released Pure as a set of small, responsive, CSS modules that you can use in every web project.
+                            The system development process started with inspiration from the natural world. Slime mold – a single cellular organism renowned for its ability to find the most optimal route to find the source of food was an initial driver of the design. During the development of the project initial ideas shifted towards a wooden, modular system which could be assembled and disassembled with ease. Timber planks of the same size would allow anyone to use and build the system.
                         </p>
-                    </div>
-                </section>
-            </div>
 
-            <div class="posts">
-                <h1 class="content-subhead">Recent Posts</h1>
-
-                <section class="post">
-                    <header class="post-header">
-                        <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
-
-                        <h2 class="post-title">Everything You Need to Know About Grunt</h2>
-
-                        <p class="post-meta">
-                            By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="post">
-                    <header class="post-header">
-                        <img width="48" height="48" alt="Reid Burke&#x27;s avatar" class="post-avatar" src="/img/common/reid-avatar.png">
-
-                        <h2 class="post-title">Photos from CSSConf and JSConf</h2>
-
-                        <p class="post-meta">
-                            By <a class="post-author" href="#">Reid Burke</a> under <a class="post-category" href="#">Uncategorized</a>
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <div class="post-images pure-g">
-                            <div class="pure-u-1 pure-u-md-1-2">
-                                <a href="http://www.flickr.com/photos/uberlife/8915936174/">
-                                    <img alt="Photo of someone working poolside at a resort"
-                                         class="pure-img-responsive"
-                                         src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
-                                </a>
-
-                                <div class="post-image-meta">
-                                    <h3>CSSConf Photos</h3>
-                                </div>
-                            </div>
-
-                            <div class="pure-u-1 pure-u-md-1-2">
-                                <a href="http://www.flickr.com/photos/uberlife/8907351301/">
-                                    <img alt="Photo of the sunset on the beach"
-                                         class="pure-img-responsive"
-                                         src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
-                                </a>
-
-                                <div class="post-image-meta">
-                                    <h3>JSConf Photos</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="post">
-                    <header class="post-header">
-                        <img width="48" height="48" alt="Andrew Wooldridge&#x27;s avatar" class="post-avatar" src="/img/common/andrew-avatar.png">
-
-                        <h2 class="post-title">YUI 3.10.2 Released</h2>
-
-                        <p class="post-meta">
-                            By <a class="post-author" href="#">Andrew Wooldridge</a> under <a class="post-category post-category-yui" href="#">YUI</a>
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        <p>
-                            We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest documentation.
-                        </p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="footer">
-                <div class="pure-menu pure-menu-horizontal">
-                    <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
-                    </ul>
                 </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                
+                <section class="post">
+                    <header class="post-header">
+
+                        <h2 class="post-title">Inspiration</h2>
+
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Design initial inspiration came from slime mold.
+                            <br>
+                            <i>“Slime molds are among the world’s strangest organisms. Long mistaken for fungi, they are now classed as a type of amoeba. As single-celled organisms, they have neither neurons nor brains. Yet for about a decade, scientists have debated whether slime molds have the capacity to learn about their environments and adjust their behavior accordingly.”
+                            <br>
+                            @Katia Moskwitch, quantamagazine</i>
+                        </p>
+                                <img alt="Slime mold"
+                        id="img_2"
+                        class="pure-img-responsive"
+                        src="http://www.iaacblog.com/wp-content/uploads/2020/12/2_slime-mold-730x380.png">
+                        <h1 id="caption_2" class="content-subhead">Slime mold by @Audrey Dussutour, CNRS</h1>
+
+                </div>
+                </section>
+
+                <div class="posts">
+                
+                    <section class="post">
+                        <header class="post-header">
+    
+                            <h2 class="post-title">Initial form finding and exploration</h2>
+    
+                        </header>
+    
+                        <div class="post-description">
+                            <p>
+                                Grasshopper form finding experiments.
+                            </p>
+                        
+                                    <img
+                            id="img_3"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/3_algorithm1-730x409.png">
+                            <img
+                            id="img_4"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/4_algorithm2-730x349.png">
+                            <img
+                            id="img_5"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/5_algorithm3-730x320.png">
+                    
+    
+                    </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+    
+                            <h2 class="post-title">Structural analysis</h2>
+    
+                        </header>
+    
+                        <div class="post-description">
+                            <p>
+                                Using KARAMBA 3d to get the better understanding of factors effecting structural performance.
+                            </p>
+                        
+                                    <img
+                            id="img_6"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/15_karamba-1-730x324.png">
+                            <img
+                            id="img_7"
+                            class="pure-img-responsive"
+                            src="https://lh3.googleusercontent.com/S_1hZXLk1oPn07NF2FcvmZAZ9UDOqO37j-XqOOf7kSuw9--rOlt6mjCnfpgWV4qKbHb5izSTuVF79k_6WsEaqY0WAsE2Nepr8pGfqWoWJXuMx7uxXiidctJyf-gxSycQPYTU_tij83E">
+                            <img
+                            id="img_8"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/16_karamba-2-730x315.png">
+                            <img
+                            id="img_9"
+                            class="pure-img-responsive"
+                            src="https://lh4.googleusercontent.com/bDml2udm93lb5-xKcw9_GBKydpdxTT-HNmkb0hhSI8pV-f_tq51noy2xQ4zuj-LRV2QQ1E-WEb8CUCL9pl7KRSFubuhSiMYYbMXaC297UXlPtM4WrLhIRLWHXGoJB75WfcITz97EVWY">
+                            <img
+                            id="img_10"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/17_3d-showcasing-legend.png">
+                            <img
+                            id="img_11"
+                            class="pure-img-responsive"
+                            src="https://lh3.googleusercontent.com/jiRcN9j1if01EzwP3kArhuhxB_K7piEqv6QraMXAYl3Ol-HqtgBdIyHMplWjPeDNqrVuAEB4K5Mc6tJG1gw7cp1Ur9dPGG5nph_CLJd6W54SaQmGlKndc2AT4vx8caiJwKHojA5WQFA">
+                            <img
+                            id="img_12"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/18_modules-730x347.png">
+                            <img
+                            id="img_13"
+                            class="pure-img-responsive"
+                            src="https://lh6.googleusercontent.com/1jzsJAeYePtuBmvDHr18hGNIIuspp7RFka1yjlpk5JsNfhphj5xkix6oKk6f7UKKFm8KRDo2mQNZ_XZn0Pu2F6oUBMJegL9DtC8IRNkbWD1b_6b--SuOf1gWZZKRm_8rWt5qHFHPPfU">
+                            <img
+                            id="img_14"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/19_karamba-3-730x311.png">
+                            <img
+                            id="img_15"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/20_karamba-4-730x307.png">
+                      
+                    </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+    
+                            <h2 class="post-title">Final fabrication approaches</h2>
+    
+                        </header>
+    
+                        <div class="post-description">
+                            <p>
+                                Final ideas for fabrication was to either use steel plates as way to join pieces or to use the self-supported approach. The element used were 5909 4 x 4 cm wooden planks, 50 cm length for regular grid and 70 cm for reciprocal approach. After analyzing the steel plates approach, it was changed to custom plug and play nest-joint system. This action was done to make the fabrication as simple and easy as possible. As the grid consists of the elements of the same length and is based on tetra and octa-hedrons it has a finite number of joint types, which can be prefabricated or 3d-printed.
+                            </p>
+                        
+                                    <img
+                            id="img_16"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/21_fabrication-730x217.png">
+                            <img
+                            id="img_17"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/22_joints-730x347.png">
+                            <img
+                            id="img_18"
+                            class="pure-img-responsive"
+                            src="http://www.iaacblog.com/wp-content/uploads/2020/12/23_joints_2-730x285.png">
+                            <iframe width=100% height="500" src="https://www.youtube.com/embed/UgZ1vc8h_QE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width=100% height="500" src="https://www.youtube.com/embed/FpjRRYxp2QE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                
+    
+                    </div>
+                    </section>
+
+                    <section class="post">
+                        <header class="post-header">
+    
+                            <h2 class="post-title">Final renders</h2>
+    
+                        </header>
+    
+                        <div class="post-description">
+                            <!-- <p>
+                                Final ideas for fabrication was to either use steel plates as way to join pieces or to use the self-supported approach. The element used were 5909 4 x 4 cm wooden planks, 50 cm length for regular grid and 70 cm for reciprocal approach. After analyzing the steel plates approach, it was changed to custom plug and play nest-joint system. This action was done to make the fabrication as simple and easy as possible. As the grid consists of the elements of the same length and is based on tetra and octa-hedrons it has a finite number of joint types, which can be prefabricated or 3d-printed.
+                            </p> -->
+                        
+                                    <img
+                            id="img_19"
+                            class="pure-img-responsive"
+                            src="https://lh6.googleusercontent.com/Nq_HS9QZ1Tz1lnV86Nx7XwOy-yZqr1fIegbLn0dwktPXyfqCZM-Lq1YqsHAVc67SZxEN6I8xNVXwepr_H2j7qL-eoHObgLInvqUwpQjadE6vFNfg1WZD4JOndmPuqUuYgdZa40Zy5Nk">
+                            <img
+                            id="img_20"
+                            class="pure-img-responsive"
+                            src="https://lh6.googleusercontent.com/buy65faiQLVVuT--ndIBl0futPcUUPmLYnDAW0CvMNqPsb8sZrSjhJ0NNPMVEH6M2yF9O7u4ZD98lhTY-SvCURBazXjKwqxTddFUVpkdARxHWkbER6tgDeGIYOk70RdG7wwrXiKYtd4">
+                            <img
+                            id="img_21"
+                            class="pure-img-responsive"
+                            src="https://lh5.googleusercontent.com/tWu8CeX7QFXZ56BeOKQuXfOC6AHavr8XLJoHNjCdYk4hnfMcUnNWuYN_Z0J1Uclzd7MmlzdKn5lXOWx2xkmkp52AY6vYYDU3M7kPyW6JwkyyxwEqcoARE4ARpjH5Ua5uq-fvVPDOGFQ">
+                            <img 
+                            id="img_21"
+                            class="pure-img-responsive"
+                            src="https://lh3.googleusercontent.com/0JY3wX5IMg3BBqRh53fH0IetuDrqwAdPEP3LXCzryxpFTj6gG8U-7T9dRKrbV9wK0qPfdwWaeFN7aN4BF0EMf6uaLOlYQ52iAOElc_t-2vG8IPFT4Mon7Piqk-bY5IaUOaGJyKcSW0Q">
+                                                                                                
+    
+                    </div>
+                    </section>
+
+
+                    </div>
+                    </section>
+
+                    <div class="posts">
+                
+                        <section class="post">
+
+                                <h1 id="caption_2" class="content-subhead">
+                                    CREDITS //
+                                    <br><br>
+                                    Modular wood pavillion is a project of IAAC, Institute for Advanced Architecture of Catalonia developed at Master in Advanced Computation for Architecture & Design in 2020/21 by Aleksander Mastalski
+                                    <br>
+                                    lead faculty: Arthur Mamou Mani
+                                    <br>
+                                    faculty assistant: Krishna Bhat
+                                </h1>
+        
+                        </div>
+                        </section>
+
             </div>
         </div>
     </div>
 </div>
+
+        <!-- javascript -->
+
+        <!-- <script type="application/javascript">
+            // get reference to html elements
+            const img = document.getElementById('img_2')
+
+            // listen to events related to the image
+            img.addEventListener('mouseover', mouseOver, false)
+            img.addEventListener('mouseout', mouseOut, false)
+
+            // define what happens when there is a mouse over event
+            function mouseOver() {
+                document.getElementById('caption_2').style.display = 'block';
+            }
+
+            // define what happens when there is a mouse out event
+            function mouseOut() {
+                document.getElementById('caption_2').style.display = 'none';
+            }
+            
+
+            
+        </script> -->
+
+        <!-- <script type="application/javascript">
+            // get reference to html elements
+            const img = document.getElementById('img_2')
+
+            // listen to events related to the image
+            img.addEventListener('mouseover', mouseOver, false)
+            img.addEventListener('mouseout', mouseOut, false)
+
+            // define what happens when there is a mouse over event
+            function mouseOver() {
+                document.getElementById('caption_2').style.display = 'block';
+            }
+
+            // define what happens when there is a mouse out event
+            function mouseOut() {
+                document.getElementById('caption_2').style.display = 'none';
+            }
+            
+        </script> -->
+
+
+        <!-- the end -->
 
 </body>
 </html>

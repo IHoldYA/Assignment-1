@@ -34,7 +34,7 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: rgb(93, 75, 61);
     color: #fff;
 }
 
@@ -47,7 +47,7 @@ h3 {
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: rgb(219, 197, 176);
 }
 
 .nav-list {
@@ -62,7 +62,7 @@ h3 {
 }
 .nav-item a {
     background: transparent;
-    border: 2px solid rgb(176, 202, 219);
+    border: 2px solid rgb(219, 197, 176);
     color: #fff;
     margin-top: 1em;
     letter-spacing: 0.05em;
@@ -91,6 +91,7 @@ h3 {
 
 .post {
     padding-bottom: 2em;
+    max-width: 100%;
 }
 .post-title {
     font-size: 2em;
@@ -106,6 +107,7 @@ h3 {
     font-family: Georgia, "Cambria", serif;
     color: #444;
     line-height: 1.8em;
+    text-align: justify;
 }
 .post-meta {
     color: #999;
