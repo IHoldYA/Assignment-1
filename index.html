@@ -37,7 +37,7 @@
                         id="img_1"
                         class="pure-img-responsive img" 
                         src="http://www.iaacblog.com/wp-content/uploads/2020/12/1_title-730x451.png">
-                        <h1 id="caption_1" class="content-subhead caption">Visualisation of the pavillion</h1>
+                        <h1 style="display: none" id="caption_1" class="content-subhead caption">Visualisation of the pavillion</h1>
 
                     </div>
                     <section class="post">
@@ -73,11 +73,13 @@
                                 <br>
                                 @Katia Moskwitch, quantamagazine</i>
                             </p>
-                                    <img alt="Slime mold"
+                        <div>
+                            <img alt="Slime mold"
                             id="img_2"
                             class="pure-img-responsive img"
                             src="http://www.iaacblog.com/wp-content/uploads/2020/12/2_slime-mold-730x380.png">
-                            <h1 id="caption_2" class="content-subhead caption">Slime mold by @Audrey Dussutour, CNRS</h1>
+                            <h1 style="display: none" id="caption_2" class="content-subhead caption">Slime mold by @Audrey Dussutour, CNRS</h1>
+                        </div>
 
                     </div>
                     </section>
@@ -95,22 +97,29 @@
                                 <p>
                                     Grasshopper form finding experiments.
                                 </p>
-                            
-                                        <img
+                            </div>
+                            <div>
+                                <img
                                 id="img_3"
-                                class="pure-img-responsive"
+                                class="pure-img-responsive img"
                                 src="http://www.iaacblog.com/wp-content/uploads/2020/12/3_algorithm1-730x409.png">
+                                <h1 style="display: none" id="caption_3" class="content-subhead caption">Slime mold behaviour recreated in grasshopper</h1>
+                            </div>
+                            <div>
                                 <img
                                 id="img_4"
-                                class="pure-img-responsive"
+                                class="pure-img-responsive img"
                                 src="http://www.iaacblog.com/wp-content/uploads/2020/12/4_algorithm2-730x349.png">
+                                <h1 style="display: none" id="caption_3" class="content-subhead caption">Algorithm applied to Ennepers surface</h1>
+                            </div>
+                            <div>
                                 <img
                                 id="img_5"
-                                class="pure-img-responsive"
+                                class="pure-img-responsive img"
                                 src="http://www.iaacblog.com/wp-content/uploads/2020/12/5_algorithm3-730x320.png">
-                        
-        
-                        </div>
+                                <h1 style="display: none" id="caption_3" class="content-subhead caption">Volumetric shape achieved by using Cocoon</h1>
+                            </div>
+                                
                         </section>
 
                         <section class="post">
@@ -230,10 +239,7 @@
                                                                                                     
         
                         </div>
-                        </section>
-
-
-                        </div>
+                    
                         </section>
 
                         <div class="posts">
@@ -249,30 +255,38 @@
                                         <br>
                                         faculty assistant: Krishna Bhat
                                     </h1>
-            
-                            </div>
                             </section>
-
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+                         
     </div>
 
             <!-- javascript -->
 
             <script type="application/javascript">
-                const mouseOver = function(event) {
-                    const img = event.target;
-                    const caption = img.parentNode.getElementsByClassName('caption')[0];
-                    caption.style.display = 'block';
-                }
-                const mouseOut = event => {
+              
+               
+                // const TEST = img.parentNode.getElementsByClassName('caption')[]
+                // TEST.style.display = "none"
+
+                    const mouseOut = event => {
                     const img = event.target;
                     const caption = img.parentNode.getElementsByClassName('caption')[0];
                     caption.style.display = 'none';
+                    img.style.filter = "none";
+                }
+                    const mouseOver = function(event) {
+                    const img = event.target;
+                    const caption = img.parentNode.getElementsByClassName('caption')[0];
+                    caption.style.display = 'block';
+                    img.style.filter = "drop-shadow(8px 8px 8px gainsboro)";
                 }
                 
                 const imgs = document.getElementsByClassName('img')
+
                 for (var i = 0; i < imgs.length; i++) {
                     imgs[i].addEventListener('mouseover', mouseOver, false)
                     imgs[i].addEventListener('mouseout', mouseOut, false)
